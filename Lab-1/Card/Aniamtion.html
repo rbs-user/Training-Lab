@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            /* transform: translate(200px,200px); */
+            /* transform: scale(3); */
+            /* transform: skew(10deg); */
+            /* transform: rotate(45deg); */
+            transition: 0.2s ease-in-out;
+        }
+        #container:active{
+            background-color: aqua;
+            border-radius: 100px;
+            border: 2px solid pink;
+        }
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+</body>
+</html>

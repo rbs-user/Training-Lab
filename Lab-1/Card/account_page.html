@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #3b5998;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .header .login-form {
+            display: flex;
+            gap: 10px;
+        }
+
+        .header .login-form input[type="text"],
+        .header .login-form input[type="password"],
+        .header .login-form button {
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+            gap: 10px;
+        }
+
+        .header .login-form input[type="text"]:hover,
+        .header .login-form input[type="password"]:hover {
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .header .login-form button {
+            background-color: #42b72a;
+            color: white;
+            cursor: pointer;
+        }
+
+        .header .login-form button:hover {
+            background-color: #36a420;
+        }
+
+        .content {
+            margin-top: 80px; /* To avoid content hidden behind the fixed header */
+            padding: 20px;
+        }
+
+        .content .create-account {
+            text-align: left;
+            max-width: 400px;
+        }
+
+        .content h2 {
+            color: #333;
+        }
+
+        .content input[type="text"],
+        .content input[type="password"],
+        .content input[type="date"],
+        .content .gender {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .content .gender {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .content .create-account-btn {
+            background-color: #42b72a;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        .content .create-account-btn:hover {
+            background-color: #36a420;
+        }
+
+        .footer {
+            background-color: #f7f7f7;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            border-top: 1px solid #ddd;
+        }
+
+        .footer a {
+            color: #3b5998;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Logo</div>
+        <div class="login-form">
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <button>Login</button>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="create-account">
+            <h2>Create Account</h2>
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+            <input type="password" placeholder="New Password">
+            <label for="birthday">Birthday</label>
+            <input type="date" id="birthday">
+            <div class="gender">
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+            </div>
+            <button class="create-account-btn">Create Account</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <a href="#">About</a>
+        <a href="#">Help</a>
+        <a href="#">Contact</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <p>&copy; 2024 Your Website</p>
+    </div>
+</body>
+</html>
