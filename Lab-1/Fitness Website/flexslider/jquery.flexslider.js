@@ -1,13 +1,4 @@
-/*
- * jQuery FlexSlider v1.8
- * http://www.woothemes.com/flexslider/
- *
- * Copyright 2012 WooThemes
- * Free to use under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- *
- * Contributing Author: Tyler Smith
- */
+
 
 ;(function ($) {
   

@@ -1290,7 +1290,8 @@ nav#filter li {
 }
 /*Price table*/
 .flat .plan {
-	border-radius: 0px;
+	border-radius: 20px;
+	align-items: center;
 	list-style: none;
 	padding: 0 0 20px;
 	margin: 0 0 15px;
