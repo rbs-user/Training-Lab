@@ -31,22 +31,22 @@
 
 // }
 // types of conso;
-console.log("hello world");
-console.error("This is error msg");
-console.warn();
-console.assert(5>10,"5 is not > than 10");
-console.assert(5<10,"5 is < than 10");
+// console.log("hello world");
+// console.error("This is error msg");
+// console.warn();
+// console.assert(5>10,"5 is not > than 10");
+// console.assert(5<10,"5 is < than 10");
 
-console.group("group1");
-console.log("message 1");
-console.log("message 2");
-console.groupEnd();
+// console.group("group1");
+// console.log("message 1");
+// console.log("message 2");
+// console.groupEnd();
 
-console.log("hello techno");
+// console.log("hello techno");
 
-console.count("counter");
-console.count("counter");
-console.count("counter");
+// console.count("counter");
+// console.count("counter");
+// console.count("counter");
 
 // Array Methords
 
@@ -104,7 +104,7 @@ console.count("counter");
 // console.log(arr.flat(2));
 
 // map , filter , reduce , forEach
-let arr = [10,20,30,40,50,60];
+// let arr = [10,20,30,40,50,60];
 // arr.map(()=>{});
     // callback function
     // high order function >important
@@ -117,9 +117,78 @@ let arr = [10,20,30,40,50,60];
 // map return new arry with the same lenghth as original
 
 // forEach
-let forArr = arr.forEach((item)=>{
-    // console.log(item);
-    return item*10;
+// let forArr = arr.forEach((item)=>{
+//     // console.log(item);
+//     return item*10;
     
-})
-console.log(forArr);
+// })
+// console.log(forArr);
+
+// let arr = [10,20,30,40,50,60];
+
+// Obj method
+// let obj ={
+//     firstname : "Roshan",
+//     lastname : "Sharma"
+// }
+
+// let keys = Object.keys(obj);
+// console.log(keys);
+// let value = Object.values(obj);
+// console.log(value);
+
+// let entries = Object.entries(obj);
+// console.log(entries);
+
+// Object.freeze(obj);
+// obj.firstname = "Ram";
+// console.log(obj);
+
+// const num ={
+//     firstname : "name",
+//     lastname : "lname"
+// }
+// num.firstname = "ram";
+// num.lastname = "sram";
+// console.log(num);
+
+// Object.seal(obj);
+
+// obj.firstname = "hekk";
+// obj.lastname = "rhhjkj";
+// obj.address = "jaipur";
+// console.log(obj);
+// console.log(obj.hasOwnproperty());
+
+// String method
+
+// let str = "hello world";
+// let char = str.charAt(6);
+// console.log(char);
+
+// let meStr = str.concat("techno");
+// console.log(meStr);
+
+// let str = "hello world";
+
+// let index = str.indexOf("ld");
+// console.log(index);
+
+// let otp = Math.floor(1000 + Math.random()*9000);
+// console.log(otp);
+
+// Object Distructing
+let obj = {
+    firstname : "roshan",
+    lastname : "sharma",
+    address : "jaipur",
+    gender : "male"
+}
+let { firstname , gender:a , age = "Xx" , ...newobj} = obj;
+console.log(firstname);
+console.log(a);
+console.log(age);
+console.log(newobj);
+
+
+
