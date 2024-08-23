@@ -178,17 +178,34 @@
 // console.log(otp);
 
 // Object Distructing
-let obj = {
+// let obj = {
+//     firstname : "roshan",
+//     lastname : "sharma",
+//     address : "jaipur",
+//     gender : "male"
+// }
+// let { firstname , gender:a , age = "Xx" , ...newobj} = obj;
+// console.log(firstname);
+// console.log(a);
+// console.log(age);
+// console.log(newobj);
+
+// let arr1 = [1,2,3,4];
+// let arr2 = [5,6,7,9];
+
+// let arr3 = [100,...arr1,1000 , ...arr2,3000];
+// console.log(arr3);
+
+
+let obj1 = {
     firstname : "roshan",
-    lastname : "sharma",
+    lastname : "sharma"
+}
+
+let obj2 = {
+    firstname : "roshans",
     address : "jaipur",
     gender : "male"
 }
-let { firstname , gender:a , age = "Xx" , ...newobj} = obj;
-console.log(firstname);
-console.log(a);
-console.log(age);
-console.log(newobj);
-
-
-
+// let obj3 = (...obj2,...obj1,);
+console.log(obj3);
