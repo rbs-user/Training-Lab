@@ -68,17 +68,55 @@ console.log(num1 !== num2); // type coreesion
 
 // console.log(5+'5');
 
-let firstname = "Roshan";
-let lastname = "Sharma";
-console.log(firstname+" "+lastname);
+// let firstname = "Roshan";
+// let lastname = "Sharma";
+// console.log(firstname+" "+lastname);
 
 //  Logical Operator
 
-let isLoggedIn = 10;
-let isAdmin = 20;
-console.log(isLoggedIn && isAdmin);
-console.log(isLoggedIn || isAdmin);
+// let isLoggedIn = 10;
+// let isAdmin = 20;
+// console.log(isLoggedIn && isAdmin);
+// console.log(isLoggedIn || isAdmin);
 
 
 
 // mouse : machenicaly opreator using scrolling engine
+
+
+
+// time interwell
+// let interval = setInterval(()=> {
+//     console.log(Math.random());
+    
+// },2000);
+
+// document.getElementById("button").addEventListener
+// ("click",function(){
+//     console.log("stop button clicked");
+//     clearInterval(interval);
+    
+// });
+
+
+// Async js
+
+// let a1 = 20;
+// let b1 = 30;
+// console.log(a1+b1);
+
+// setTimeout(()=>{
+//     console.log("hello twchno");    
+// },10000);
+
+// console.log(a);
+// console.log(b);
+
+
+// import { add , multiply} from "./math.js";
+// console.log(add(10,20));
+// console.log(multiply(10,20));
+
+// camel case == variable , function -- firstName
+// pascle case == react componenet -- FirstName
+// snake case == keys value -- first_name , FIRST_NAME , First_Name
