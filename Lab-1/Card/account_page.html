@@ -48,15 +48,20 @@
             background-color: #42b72a;
             color: white;
             cursor: pointer;
+            margin-right: 30px;
         }
 
         .header .login-form button:hover {
             background-color: #36a420;
+            margin-right: 33px;
         }
 
         .content {
-            margin-top: 80px; /* To avoid content hidden behind the fixed header */
+            display: flex;
+            margin-top: 80px; 
+            margin-right: 50px;/* To avoid content hidden behind the fixed header */
             padding: 20px;
+            justify-content: right;
         }
 
         .content .create-account {
@@ -66,6 +71,8 @@
 
         .content h2 {
             color: #333;
+            display: flex;
+            justify-content: center;
         }
 
         .content input[type="text"],
@@ -81,7 +88,8 @@
 
         .content .gender {
             display: flex;
-            justify-content: space-between;
+            gap: 20px;
+            border: none;
         }
 
         .content .create-account-btn {

@@ -4,6 +4,10 @@ const fs = require("fs");
 const os = require("os");
 const path = require("path");
 const http = require("http");
+const EventEimtter = require("events");
+const { Socket } = require("dgram");
+
+const event = new EventEimtter();
 
 // fs.writeFileSync("read.txt", "Welcome to Techno NJR");
 // // buffer :> binary data self file data divide into multiple parts and send to request one.
@@ -77,14 +81,41 @@ const http = require("http");
 const server = http.createServer((req,res)=>{
     if(req.url == "/"){
         res.end("welcome to http server");
+        event.emit("Home Page Accessed")
     }else if(req.url == "/about"){
         res.end("You are on About Page");
+        event.emit("aboutPageAccessed");
     }else{
         res.end("Unknown Page");
+        event.emit("unkownPageAccessed");
     }
 });
+// server.on("request",(req,res)=>{
+//     if(url != "fevucon.ico"){
+//         console.log("request",req.url); 
+//     }
+// });
+
+server.on("connection",(socket)=>{
+    console.log("connection");
+    
+})
+
+// server.on("close",()=>{
+//     console.log("server Closed");
+// });
+// setTimeout(()=>{
+//     server.close();
+// },5000);
 
 server.listen(3000,"127.0.0.1",()=>{
     console.log("server is running on 3000 port");
     
 });
+
+// 06.09.2024
+
+// event.on("myName",(name,age)=>{
+//     console.log("My name $(name) and my age is $(age)");
+// })
+// event.emit("myName","Roshan",20);
